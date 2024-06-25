@@ -51,6 +51,7 @@ public class UserController {
     public User updateMusical(@PathVariable Long id,@RequestBody User user) {
         return userService.updateMusical(id, user);
     }
+
     @PutMapping("/enterprice/{id}")
     public User updateEnterprice(@PathVariable Long id,@RequestBody User user) {
         return userService.updateEnterprice(id, user);
